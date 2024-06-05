@@ -1,2 +1,4 @@
-hello how are me ,
-i am fine thank me 
+Hi everyone
+we are learning file/IO 
+using Python
+i like programming in Python
