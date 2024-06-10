@@ -1,8 +1,8 @@
 #  Write a Python program to copy the contents of one text
 # file into another2
-with open("f1.txt" , "r") as f:
+with open("files/f1.txt" , "r") as f:
     data = f.read()
-with open("f2.txt" , "w") as f:
+with open("files/f2.txt" , "w") as f:
     f.write(data)
 
 
@@ -10,7 +10,7 @@ with open("f2.txt" , "w") as f:
 #  Given a CSV file with student names and scores, find the
 #  student with the highest score
 import csv
-with open("s.csv" , "r") as f:
+with open("files/s.csv" , "r") as f:
     d = csv.reader(f)
     next(d)
     top_stud = ''
@@ -29,11 +29,11 @@ with open("s.csv" , "r") as f:
 
 #  Implement a program that reads a text file and counts the
 # number of words and lines in it
-with open("f2.txt" , "r") as f:
+with open("files/f2.txt" , "r") as f:
     info = f.read()
     li = info.split(" ")
     print("number of words = " , len(li))
-with open("f2.txt" , "r") as f:
+with open("files/f2.txt" , "r") as f:
     count = 0
     i = 1
     while i == "  ":
@@ -51,7 +51,7 @@ b = " this is second line "
 c = " this is the third line "
 li = [a,b,c]
 def wrfu(l):
-    with open("new.txt" , "w") as f :
+    with open("files/new.txt" , "w") as f :
         for sen in l:
             f.write(f"{sen}\n")
 # wrfu(li)       
@@ -60,7 +60,7 @@ def wrfu(l):
 #  Given a CSV file with employee details (name, age,
 # salary), calculate the average salary of all employees
 import csv
-with open("emp.csv" , "r+") as f:
+with open("files/emp.csv" , "r+") as f:
     i = csv.reader(f)
     next(i)
     salar = []
@@ -84,7 +84,7 @@ with open("emp.csv" , "r+") as f:
 #  Given a text file with a list of numbers, write a function
 # that finds the sum of all numbers in the file
 def findsum():
-    with open("numbs.txt" , "r") as f:
+    with open("files/numbs.txt" , "r") as f:
         data = f.read()
         d = data.split(",")
         sum = 0
@@ -106,7 +106,7 @@ def findsum():
 #  Given a CSV file with temperature data for each day of
 # the week, find the average temperature for each day.
 import csv
-with open("temp.csv" , "r") as f:
+with open("files/temp.csv" , "r") as f:
     tempD = csv.reader(f)
     next(tempD)
     sum = 0
@@ -118,5 +118,5 @@ with open("temp.csv" , "r") as f:
     print(tempe)   
     for i in tempe:
         sum += int(i)
-    print("sum = " , sum)
+    print("sum =" , sum)
     print("average temp = " , sum/7)
