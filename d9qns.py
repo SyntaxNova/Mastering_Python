@@ -94,11 +94,6 @@ car1 = car("hyndai" , "i10 sports" , 2012)
 
 
 
-#  Given a JSON file with customer data, create a Customer
-# class to store and manipulate the data
-
-
-
 #  Write a program that uses a Person class to keep track of
 # a person's name, age, and address
 class person:
